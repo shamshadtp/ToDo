@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.center{
+    margin-left: 20%;   
+    margin-top: 10%;
+     width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-color: slategray;
+}
+.color{
+    background-color:cornsilk;
+}
+</style>
+</head>
+<body class="color">
+    <div class="center">
+    <h1>SIGN UP</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        
+        <button type="submit">Submit</button>
+
+    </form>
+    </div>
+
+
+</body>
+
+</html>
